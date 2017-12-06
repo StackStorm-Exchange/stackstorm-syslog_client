@@ -1,6 +1,6 @@
 ---
 name: "log_via_syslog"
-pack: syslog
+pack: syslog_client
 runner_type: "action-chain"
 description: "Post a message to syslog"
 enabled: true

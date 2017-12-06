@@ -1,6 +1,6 @@
 ---
 name: "format_execution_result"
-pack: syslog
+pack: syslog_client
 runner_type: python-script
 description: "Format an execution result to log via syslog protocol."
 enabled: true

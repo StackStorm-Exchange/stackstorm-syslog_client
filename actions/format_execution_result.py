@@ -1,5 +1,5 @@
-import six
 import os
+import six
 
 from st2common.runners.base_action import Action
 from st2client.client import Client

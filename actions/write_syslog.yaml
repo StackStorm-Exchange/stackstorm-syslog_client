@@ -1,6 +1,6 @@
 ---
 name: write_syslog
-pack: syslog
+pack: syslog_client
 runner_type: python-script
 description: Write a message via syslog protocol
 enabled: true

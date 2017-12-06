@@ -1,6 +1,6 @@
 ---
 name: "write_log"
-pack: "syslog"
+pack: "syslog_client"
 enabled: true
 description: "Notification rule to send results of action executions to syslog"
 trigger:
@@ -10,6 +10,6 @@ criteria:
     pattern: "syslog"
     type: "equals"
 action:
-  ref: syslog.log_via_syslog
+  ref: syslog_client.log_via_syslog
   parameters:
     execution_id: "{{ trigger.execution_id }}"

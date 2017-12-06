@@ -1,19 +1,20 @@
-# StackStorm Exchange Incubator
+# Syslog Client Integration Pack
 
-### What is this?
+Pack that provides actions for sending events to Syslog servers. 
 
-This repository is a very special place where user-submitted packs get reviewed, perfected, approved, and finally transferred to the Exchange.
+The main idea of the syslog pack is to be able to use the notification feature in StackStorm to
+generate logs for executed actions without having to explicitly create log steps in a workflow.
 
-If you want to submit your pack, it's simple! **Fork this repo, create a subdirectory with your pack, and open a Pull Request.** We'll take it from here. Even if your pack is work-in-progress, you can still submit it to get advice and early feedback from our engineers! Or ping us [on Slack](https://stackstorm.com/community-signup), which is generally the best place to get advice from the StackStorm Community.
+**NOTE:** This pack is a syslog client only. If you are looking for low-volume syslog integration,
+check out the [Ghost2Logger](https://github.com/StackStorm-Exchange/stackstorm-ghost2logger) pack.
+For high volumes, we recommend using Elastic Stack or Splunk, and forwarding specific events to ST2.
 
-Before you submit a pack, make sure to read the [Create and Contribute a Pack](https://docs.stackstorm.com/reference/packs.html) section of our documentation.
+## Actions
 
-Here's N.E.P.T.R. the StackStorm Exchange Governor, giving you a thumbs-up:
+* `format_execution_result` - Transform trigger into a message for syslog.
+* `write_syslog` - Send a message to a syslog server.
+* `log_via_syslog` - Format an execution and send the write the result as a message to syslog.
 
-![](http://i.imgur.com/3bqVAh0.gif)
+## Legal
 
-## Contributors License Agreement
-
-By contributing you agree that these contributions are your own (or approved by your employer) and
-you grant a full, complete, irrevocable copyright license to all users and developers of the
-project, present and future, pursuant to the license of the project.
+Obligatory kudos to https://icons8.com/ for the icon.

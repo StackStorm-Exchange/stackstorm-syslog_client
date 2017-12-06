@@ -1,8 +1,8 @@
 import socket
 import logging
 
-from st2common.runners.base_action import Action
 from logging.handlers import SysLogHandler
+from st2common.runners.base_action import Action
 
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
