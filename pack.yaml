@@ -2,8 +2,8 @@
 name: syslog_client
 description: Syslog Client actions
 keywords:
-   - syslog
-   - monitoring
+  - syslog
+  - monitoring
 version: 0.0.1
 author: Carlos
 email: nzlosh@yahoo.com
